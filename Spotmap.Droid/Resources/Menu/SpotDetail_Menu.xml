@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+  <item android:id="@+id/deleteSpot"  android:titleCondensed="@string/SpotDetailViewMenuDeleteOption" android:title="@string/SpotDetailViewMenuDeleteOption"/>
+  <item android:id="@+id/showOnMap"  android:titleCondensed="@string/SpotDetailViewMenuShowOnMapOption" android:title="@string/SpotDetailViewMenuShowOnMapOption" />
+  <item android:id="@+id/shareSpot"  android:titleCondensed="@string/SpotDetailViewMenuShareSpot" android:title="@string/SpotDetailViewMenuShareSpot" />
+</menu>

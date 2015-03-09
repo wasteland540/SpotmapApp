@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:local="http://schemas.android.com/apk/res-auto"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:descendantFocusability="blocksDescendants">
+
+  <ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="1dp"
+    local:MvxBind="Bitmap PictureBytes,Converter=InMemoryImage" />
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="fill_parent">
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginLeft="10dp"
+      android:layout_weight="20"
+      android:textSize="20dp"
+      local:MvxBind="Text Name"/>
+
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_weight="80"
+      android:weightSum="1"
+      android:layout_height="fill_parent">
+
+      <View android:layout_height="fill_parent" android:layout_width="0dp" android:layout_weight="1" />
+      <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        local:MvxBind="Checked Selected" />
+    </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

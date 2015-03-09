@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- selected state -->
+  <item android:drawable="@drawable/buttonshape_pressed"
+        android:state_selected="false"
+        android:state_pressed="true"/>
+  
+  <item android:drawable="@drawable/buttonshape_disabeled"
+        android:state_enabled="false"/>
+
+  <!-- unselected state (default) -->
+  <item android:drawable="@drawable/buttonshape" />
+</selector>

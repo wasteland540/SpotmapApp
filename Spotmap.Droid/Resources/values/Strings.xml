@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">Spotmap</string>
+    <string name="MainViewLabel">Spotmap</string>
+    <string name="AddSpotViewLabel">Add Spot</string>
+    <string name="AddSpotViewHeaderLabel">Add new Spot</string>
+    <string name="AddSpotViewTakePictureBtn">Take Picture</string>
+    <string name="AddSpotViewChoosePictureBtn">Choose Picture</string>
+    <string name="AddSpotViewSaveBtn">Save</string>
+    <string name="SpotListViewLabel">Spotlist (without GPS)</string>
+    <string name="SpotListViewHeaderLabel">Spots without location data</string>
+    <string name="SpotDetailViewLabel">Spot-Details</string>
+    <string name="SpotDetailViewHeaderLabel">Details</string>
+    <string name="SpotDetailViewMenuDeleteOption">Delete Spot</string>
+    <string name="SpotDetailViewMenuShowOnMapOption">Show on Map</string>
+    <string name="SpotmapViewLabel">Spotmap</string> 
+    <string name="SpotmapViewMenuGetSharedSpotOption">Get Shared Spot</string>
+    <string name="SpotmapViewMenuGetSharedSpotsBundleOption">Get Shared Spot Bundle</string>
+    <string name="SpotGpsListViewHeaderLabel">Spots with location data</string>
+    <string name="SpotGpsListViewLabel">Spotlist (with GPS)</string>
+    <string name="SpotGpsListViewMenuShareSpotsOption">Share selected Spots (Bundle)</string>
+    <string name="SingleSpotOnMapViewLabel">Single Spot on Map</string>
+    <string name="SpotDetailViewMenuShareSpot">Share Spot</string>
+    <string name="ShareKeyViewLabel">Share Key for your friend</string>
+    <string name="ShareKeyViewHeaderLabel">Share Key for this Spot</string>
+    <string name="ShareKeyViewOkBtn">Close</string>
+    <string name="GetSharedSpotViewLabel">Get a new spot from friends</string>
+    <string name="GetSharedSpotViewSaveBtn">Save</string>
+    <string name="GetSharedSpotViewHeaderLabel">Get Shared Spot</string>
+    <string name="GetSharedSpotViewDownloadBtn">Download</string>
+    <string name="GetSharedSpotViewCancelBtn">Cancel</string>
+    <string name="GetSharedSpotsBundleViewLabel">Get Spot Bundle</string>
+    <string name="GetSharedSpotsBundleViewHeaderLabel">Get a new spot bundle from friends</string>
+    <string name="GetSharedSpotsBundleViewDownloadBtn">Download</string>
+    <string name="GetSharedSpotsBundleViewSaveBtn">Save</string>
+    <string name="GetSharedSpotsBundleViewCancelBtn">Cancel</string>
+</resources>

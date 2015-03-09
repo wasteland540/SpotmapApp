@@ -1,0 +1,12 @@
+﻿<!ELEMENT Spots (Spot+)>
+
+<!ELEMENT Spot (#PCDATA)>
+<!ATTLIST Spot
+  Name CDATA #REQUIRED
+  Description CDATA #IMPLIED
+  LocationKown (True|False) "False"
+  Lat CDATA #REQUIRED
+  Lng CDATA #REQUIRED
+  PictureBytes CDATA #REQUIRED
+  CreatedAt CDATA #REQUIRED
+>

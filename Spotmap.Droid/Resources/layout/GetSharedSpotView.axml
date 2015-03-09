@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="40dp"
+      android:text="@string/GetSharedSpotViewHeaderLabel" />
+    <EditText
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20dp"
+      android:hint="Share Key"
+      local:MvxBind="Text ShareKey" />
+    <Button
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="30sp"
+      android:textColor="#FFFFFF"
+      android:background="@drawable/Button_Default_Blue"
+      android:shadowColor="#A8A8A8"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      android:text="@string/GetSharedSpotViewDownloadBtn"
+      local:MvxBind="Click GetSharedSpotCommand" />
+
+    <CheckBox
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20dp"
+      android:text="Download Completed"
+      android:enabled="false"
+      local:MvxBind="Checked ResponseCompleted" />
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20dp"
+      local:MvxBind="Text SpotName" />
+    <ImageView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      local:MvxBind="Bitmap PictureBytes,Converter=InMemoryImage" />
+
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:weightSum="100">
+
+      <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="50"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/Button_Default_Blue"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/GetSharedSpotViewCancelBtn"
+        local:MvxBind="Click CancelCommand" />
+
+      <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="50"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/Button_Default_Blue"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/GetSharedSpotViewSaveBtn"
+        local:MvxBind="Click AddSpotCommand;Enabled ResponseCompleted" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

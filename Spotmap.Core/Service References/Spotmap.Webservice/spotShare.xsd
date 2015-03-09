@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://webservice.spotmap.de/" targetNamespace="http://webservice.spotmap.de/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getSharedSpot" type="tns:getSharedSpot" />
+  <xs:element name="getSharedSpotResponse" type="tns:getSharedSpotResponse" />
+  <xs:element name="getSharedSpots" type="tns:getSharedSpots" />
+  <xs:element name="getSharedSpotsResponse" type="tns:getSharedSpotsResponse" />
+  <xs:element name="shareSpot" type="tns:shareSpot" />
+  <xs:element name="shareSpotResponse" type="tns:shareSpotResponse" />
+  <xs:element name="shareSpots" type="tns:shareSpots" />
+  <xs:element name="shareSpotsResponse" type="tns:shareSpotsResponse" />
+  <xs:complexType name="shareSpot">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:spot" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="spot">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="id" type="xs:long" />
+      <xs:element minOccurs="0" name="key" type="xs:string" />
+      <xs:element name="lat" type="xs:double" />
+      <xs:element name="lng" type="xs:double" />
+      <xs:element name="locationKown" type="xs:boolean" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="pictureBytes" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="shareSpotResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSharedSpots">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSharedSpotsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:spot" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSharedSpot">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSharedSpotResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:spot" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="shareSpots">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" nillable="true" type="tns:spot" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="shareSpotsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice.spotmap.de/" name="SpotShareImplService" targetNamespace="http://webservice.spotmap.de/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://192.168.1.72:8080/spotShare?xsd=1" namespace="http://webservice.spotmap.de/" />
+    </xsd:schema>
+  </types>
+  <message name="shareSpot">
+    <part name="parameters" element="tns:shareSpot" />
+  </message>
+  <message name="shareSpotResponse">
+    <part name="parameters" element="tns:shareSpotResponse" />
+  </message>
+  <message name="getSharedSpot">
+    <part name="parameters" element="tns:getSharedSpot" />
+  </message>
+  <message name="getSharedSpotResponse">
+    <part name="parameters" element="tns:getSharedSpotResponse" />
+  </message>
+  <message name="shareSpots">
+    <part name="parameters" element="tns:shareSpots" />
+  </message>
+  <message name="shareSpotsResponse">
+    <part name="parameters" element="tns:shareSpotsResponse" />
+  </message>
+  <message name="getSharedSpots">
+    <part name="parameters" element="tns:getSharedSpots" />
+  </message>
+  <message name="getSharedSpotsResponse">
+    <part name="parameters" element="tns:getSharedSpotsResponse" />
+  </message>
+  <portType name="ISpotShare">
+    <operation name="shareSpot">
+      <input message="tns:shareSpot" />
+      <output message="tns:shareSpotResponse" />
+    </operation>
+    <operation name="getSharedSpot">
+      <input message="tns:getSharedSpot" />
+      <output message="tns:getSharedSpotResponse" />
+    </operation>
+    <operation name="shareSpots">
+      <input message="tns:shareSpots" />
+      <output message="tns:shareSpotsResponse" />
+    </operation>
+    <operation name="getSharedSpots">
+      <input message="tns:getSharedSpots" />
+      <output message="tns:getSharedSpotsResponse" />
+    </operation>
+  </portType>
+  <binding name="SpotShareImplPortBinding" type="tns:ISpotShare">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="shareSpot">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSharedSpot">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="shareSpots">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSharedSpots">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SpotShareImplService">
+    <port name="SpotShareImplPort" binding="tns:SpotShareImplPortBinding">
+      <soap:address location="http://192.168.1.72:8080/spotShare" />
+    </port>
+  </service>
+</definitions>
